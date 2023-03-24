@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HDT7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Association.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Association.java" afterDir="false" />
+    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="Association class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NKYJcu5jnMYEdaqNJOIhfV2aCR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,11 +52,23 @@
       <option name="presentableId" value="Default" />
       <updated>1679414174833</updated>
       <workItem from="1679414176147" duration="436000" />
-      <workItem from="1679621699385" duration="673000" />
+      <workItem from="1679621699385" duration="1681000" />
     </task>
+    <task id="LOCAL-00001" summary="Association class">
+      <created>1679622434469</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679622434469</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Association class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Association class" />
   </component>
 </project>
