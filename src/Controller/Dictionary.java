@@ -38,4 +38,8 @@ public class Dictionary {
         }
         return "Word not found";
     }
+    public List<Association<String, String[]>> getAssociations() {
+        return associations;
+    }
+
 }
