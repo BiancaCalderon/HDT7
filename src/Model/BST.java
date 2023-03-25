@@ -1,6 +1,4 @@
-package Controller;
-
-import Controller.Node;
+package Model;
 
 import java.util.function.Consumer;
 

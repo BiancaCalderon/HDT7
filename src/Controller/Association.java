@@ -1,6 +1,6 @@
 package Controller;
 
-public class Association<K, V> implements Comparable<Association<K, V>> {
+public class Association<K extends Comparable<K>, V> implements Comparable<Association<K, V>> {
     private K key;
     private V value;
 
@@ -13,10 +13,6 @@ public class Association<K, V> implements Comparable<Association<K, V>> {
         return key;
     }
 
-    public void setKey(K key) {
-        this.key = key;
-    }
-
     public V getValue() {
         return value;
     }
@@ -27,6 +23,11 @@ public class Association<K, V> implements Comparable<Association<K, V>> {
 
     @Override
     public int compareTo(Association<K, V> o) {
-        return 0;
+        return key.compareTo(o.getKey());
     }
+
+    @Override
+    public String toString() {
+        return "[" + key + ", " + value + "]";
     }
+}

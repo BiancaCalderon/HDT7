@@ -39,7 +39,7 @@ public class Main {
                 System.out.println("Saliendo...");
                 break;
             }
-            System.out.print("Ingresa el idioma a traducir (english/español/francais): ");
+            System.out.print("Ingresa el idioma a traducir (english/spanish/french): ");
             String targetLanguage = scanner.nextLine().trim().toLowerCase();
             String translation = dictionary.translate(word, targetLanguage);
             System.out.println("Translation: " + translation);

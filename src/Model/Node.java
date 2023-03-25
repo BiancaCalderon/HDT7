@@ -1,4 +1,4 @@
-package Controller;
+package Model;
 
 public class Node<E extends Comparable<E>> {
     private E data;

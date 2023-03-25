@@ -1,71 +1,41 @@
 package Controller;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Dictionary {
-    private BST<Association<String, String>> englishTree;
-    private BST<Association<String, String>> spanishTree;
-    private BST<Association<String, String>> frenchTree;
+    private List<Association<String, String[]>> associations;
 
     public Dictionary() {
-        englishTree = new BST<>();
-        spanishTree = new BST<>();
-        frenchTree = new BST<>();
+        associations = new ArrayList<>();
     }
 
-    public void addAssociation(String english, String spanish, String french) {
-        Association<String, String> englishAssociation = new Association<>(english.toLowerCase(), spanish.toLowerCase() + ", " + french.toLowerCase());
-        Association<String, String> spanishAssociation = new Association<>(spanish.toLowerCase(), english.toLowerCase() + ", " + french.toLowerCase());
-        Association<String, String> frenchAssociation = new Association<>(french.toLowerCase(), english.toLowerCase() + ", " + spanish.toLowerCase());
-
-        englishTree.insert(englishAssociation);
-        spanishTree.insert(spanishAssociation);
-        frenchTree.insert(frenchAssociation);
+    public void addAssociation(String englishWord, String spanishWord, String frenchWord) {
+        String[] translations = new String[] {englishWord, spanishWord, frenchWord};
+        Association<String, String[]> association = new Association<>(englishWord, translations);
+        associations.add(association);
+        Association<String, String[]> association1 = new Association<>(spanishWord, translations);
+        associations.add(association1);
+        Association<String, String[]> association2 = new Association<>(frenchWord, translations);
+        associations.add(association2);
     }
 
-    public ArrayList<String> getEnglishDictionary() {
-        ArrayList<String> dictionary = new ArrayList<>();
-        englishTree.inOrderTraversal((association -> dictionary.add(association.getKey())));
-        return dictionary;
-    }
-
-    public ArrayList<String> getSpanishDictionary() {
-        ArrayList<String> dictionary = new ArrayList<>();
-        spanishTree.inOrderTraversal((association -> dictionary.add(association.getKey())));
-        return dictionary;
-    }
-
-    public ArrayList<String> getFrenchDictionary() {
-        ArrayList<String> dictionary = new ArrayList<>();
-        frenchTree.inOrderTraversal((association -> dictionary.add(association.getKey())));
-        return dictionary;
-    }
-
-    public String translate(String word, String language) {
-        String result = "*" + word + "*";
-        word = word.toLowerCase();
-        if (language.equalsIgnoreCase("spanish")) {
-            Association<String, String> spanishAssociation = new Association<>(word, "");
-            spanishAssociation = spanishTree.search(spanishAssociation);
-            if (spanishAssociation != null) {
-                String[] translations = spanishAssociation.getValue().split(", ");
-                result = translations[0];
-            }
-        } else if (language.equalsIgnoreCase("french")) {
-            Association<String, String> frenchAssociation = new Association<>(word, "");
-            frenchAssociation = frenchTree.search(frenchAssociation);
-            if (frenchAssociation != null) {
-                String[] translations = frenchAssociation.getValue().split(", ");
-                result = translations[1];
-            }
-        } else {
-            Association<String, String> englishAssociation = new Association<>(word, "");
-            englishAssociation = englishTree.search(englishAssociation);
-            if (englishAssociation != null) {
-                String[] translations = englishAssociation.getValue().split(", ");
-                result = translations[0];
+    public String translate(String word, String targetLanguage) {
+        for (Association<String, String[]> association : associations) {
+            if (association.getKey().equals(word)) {
+                String[] translations = association.getValue();
+                switch (targetLanguage) {
+                    case "english":
+                        return translations[0];
+                    case "spanish":
+                        return translations[1];
+                    case "french":
+                        return translations[2];
+                    default:
+                        return "Invalid target language";
+                }
             }
         }
-        return result;
+        return "Word not found";
     }
 }
