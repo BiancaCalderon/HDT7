@@ -43,15 +43,20 @@ public class Main {
             String targetLanguage = scanner.nextLine().trim().toLowerCase();
             String[] words = word.split(" ");
             boolean found = false;
+            String finalTranslation = "";
             for (String w : words) {
                 String translation = dictionary.translate(w, targetLanguage);
                 if (!translation.equals("Word not found")) {
-                    System.out.println("Translation of " + w + ": " + translation);
+                    finalTranslation += translation + " ";
                     found = true;
+                } else {
+                    finalTranslation += "*" + w + "* ";
                 }
             }
             if (!found) {
                 System.out.println("Word not found");
+            } else {
+                System.out.println("Translation of " + word+ ": "+ ""+ finalTranslation);
             }
         }
         scanner.close();

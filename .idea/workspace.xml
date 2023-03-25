@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="Cambios Dictionary">
+    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="Main Modifies">
       <change beforePath="$PROJECT_DIR$/src/UI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <updated>1679414174833</updated>
       <workItem from="1679414176147" duration="436000" />
       <workItem from="1679621699385" duration="7243000" />
-      <workItem from="1679668866792" duration="19383000" />
+      <workItem from="1679668866792" duration="19743000" />
     </task>
     <task id="LOCAL-00001" summary="Association class">
       <created>1679622434469</created>
@@ -120,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679717931515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Main Modifies">
+      <created>1679718399828</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679718399828</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Main Modifies">
+      <created>1679718419443</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679718419443</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +148,7 @@
     <MESSAGE value="Dictionary implemented" />
     <MESSAGE value="Main" />
     <MESSAGE value="Cambios Dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios Dictionary" />
+    <MESSAGE value="Main Modifies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main Modifies" />
   </component>
 </project>
