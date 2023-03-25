@@ -41,11 +41,19 @@ public class Main {
             }
             System.out.print("Ingresa el idioma a traducir (english/spanish/french): ");
             String targetLanguage = scanner.nextLine().trim().toLowerCase();
-            String translation = dictionary.translate(word, targetLanguage);
-            System.out.println("Translation: " + translation);
+            String[] words = word.split(" ");
+            boolean found = false;
+            for (String w : words) {
+                String translation = dictionary.translate(w, targetLanguage);
+                if (!translation.equals("Word not found")) {
+                    System.out.println("Translation of " + w + ": " + translation);
+                    found = true;
+                }
+            }
+            if (!found) {
+                System.out.println("Word not found");
+            }
         }
         scanner.close();
     }
 }
-
-
