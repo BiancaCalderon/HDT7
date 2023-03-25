@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="BST">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BST.java" afterDir="false" />
+    <list default="true" id="ba32331c-e6b4-457e-a340-7a74eeb256db" name="Changes" comment="Dictionary implemented">
       <change afterPath="$PROJECT_DIR$/src/UI/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Association.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Association.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +64,7 @@
       <updated>1679414174833</updated>
       <workItem from="1679414176147" duration="436000" />
       <workItem from="1679621699385" duration="7243000" />
-      <workItem from="1679668866792" duration="9893000" />
+      <workItem from="1679668866792" duration="12065000" />
     </task>
     <task id="LOCAL-00001" summary="Association class">
       <created>1679622434469</created>
@@ -91,7 +87,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679626517485</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="BST modified">
+      <created>1679708277634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679708277634</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Node implemented, ReadFile">
+      <created>1679708778507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679708778507</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dictionary implemented">
+      <created>1679709921451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679709921451</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +117,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Association class" />
     <MESSAGE value="BST" />
-    <option name="LAST_COMMIT_MESSAGE" value="BST" />
+    <MESSAGE value="BST modified" />
+    <MESSAGE value="Node implemented, ReadFile" />
+    <MESSAGE value="Dictionary implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dictionary implemented" />
   </component>
 </project>
